@@ -1,14 +1,14 @@
 // This script adds simple interactivity to the landing page
 
-// Get the "Give Now" button by its id
-var donateButton = document.getElementById('donate-btn');
+// The Give Now button now just redirects using a link, so no code is needed here
 
-// When the button is clicked, show a prompt for debit card info
-donateButton.onclick = function() {
-  // Get the value from the input box
-  var changeInput = document.getElementById('change-input').value;
-  // Show a prompt asking for debit card information
-  var cardInfo = prompt('Please enter your debit card information to donate:');
+// // Get the testimony box by its id (if it exists)
+// var testimonyBox = document.getElementById('testimony-box');
+// if (testimonyBox) {
+// testimonyBox.onclick = function() {
+// alert('Want to hear real stories? Stay tuned for more!');
+// };
+// }
   // If the user enters something, show thank you and confetti
   if (cardInfo) {
     alert('Thank you for your interest in donating!');
