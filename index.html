@@ -14,9 +14,12 @@
       <img src="img/cw_logo-2.png" alt="Logo" />
     </div>
     <nav>
-      <a href="#">ABOUT US</a>
-      <a href="#">TAKE ACTION</a>
-      <a href="#">WATER</a>
+      <!-- This link now goes to the official About page -->
+      <a href="https://www.charitywater.org/about" target="_blank">ABOUT US</a>
+      <!-- This link now goes to the official Take Action page -->
+      <a href="https://www.charitywater.org/take-action" target="_blank">TAKE ACTION</a>
+      <!-- This link now goes to the official Water Crisis page -->
+      <a href="https://www.charitywater.org/global-water-crisis" target="_blank">WATER</a>
       <a href="#" class="learn-more">Learn More</a>
     </nav>
   </header>
@@ -26,8 +29,16 @@
       <h1>See Your Impact. <br/>Change Lives. Rally Your Campus.</h1>
       <p>Every dollar you give helps bring clean water to communities in need - and with charity: water’s proven transparency, you’ll always see exactly how your contribution makes real change happen.</p>
       <div class="donate-section">
-        <span>TIME TO MAKE A CHANGE</span>
-        <button>Give Now 💧</button>
+        <!-- Changed span to input so users can type -->
+        <!-- This is a text box where you can type your message -->
+        <input 
+          type="text" 
+          id="change-input" 
+          placeholder="TIME TO MAKE A CHANGE" 
+          style="border:none; outline:none; padding:15px 30px; flex:1; font-weight:bold; color:#ccc; border-radius:40px 0 0 40px;"
+        />
+        <!-- The Give Now button stays the same -->
+        <button id="donate-btn">Give Now 💧</button>
       </div>
       <div class="progress-container">
         <div class="progress-bar">
@@ -41,7 +52,10 @@
     </div>
     <div class="main-right">
       <img src="img/Hero Image.jpg" alt="Child with water" />
-      <div class="testimony">Hear Real Testimonies ▶️</div>
+      <!-- The testimony box now links to a real story -->
+      <a href="https://www.charitywater.org/stories/not-unless-you-wash-your-hands" target="_blank" style="text-decoration: none;">
+        <div class="testimony" id="testimony-box">Hear Real Testimonies ▶️</div>
+      </a>
     </div>
   </section>
 
@@ -53,9 +67,14 @@
       <p><span>Two Months Ago</span> <span>$110 ➔</span></p>
     </div>
 
-    <div class="project-sites">
-      Check Out Our Project Sites ➔
-    </div>
+    <!-- The project sites box now links to the official project sites page -->
+    <a href="https://www.charitywater.org/our-work" target="_blank" style="text-decoration: none;">
+      <div class="project-sites">
+        Check Out Our Project Sites ➔
+      </div>
+    </a>
   </section>
+  <!-- Link to JavaScript file for interactivity -->
+  <script src="script.js"></script>
 </body>
 </html>

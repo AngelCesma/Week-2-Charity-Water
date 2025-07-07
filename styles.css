@@ -89,6 +89,23 @@ nav a {
   margin-bottom: 20px;
 }
 
+/* Style the input box in the donate section */
+#change-input {
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  flex: 1;
+  font-weight: bold;
+  /* The placeholder text will be gray, but typed text will be black */
+  color: #000; /* User's typed text is black */
+  border-radius: 40px 0 0 40px;
+}
+
+/* Make the placeholder text gray */
+#change-input::placeholder {
+  color: #ccc; /* Same gray as before */
+}
+
 .donate-section span {
   padding: 15px 30px;
   flex: 1;
