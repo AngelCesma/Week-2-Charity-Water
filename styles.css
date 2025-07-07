@@ -1,0 +1,201 @@
+/* Make sure this file is only linked ONCE in your HTML! */
+
+/* Set up the basic page styles */
+body {
+  margin: 0;
+  font-family: Nunito, sans-serif;
+  background-color: #fef6d9;
+}
+
+/* Header styles */
+header {
+  background-color: #fef6d9;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styles */
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  background: #ffffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* Highlight the "Learn More" button */
+.learn-more {
+  background: #f2c200;
+  color: #000;
+  border-radius: 8px;
+}
+
+/* Main content area styles */
+.main-content {
+  /* Note: Uses grid for layout, but beginners can replace with flex or block if needed */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #003366;
+  color: #ffffff;
+  padding: 50px;
+}
+
+/* Left side of main content */
+.main-left {
+  padding-right: 40px;
+}
+
+.main-left h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.main-left p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Donation section styles */
+.donate-section {
+  display: flex;
+  background: #ffffff;
+  color: #000;
+  border-radius: 40px;
+  overflow: hidden;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.donate-section span {
+  padding: 15px 30px;
+  flex: 1;
+  font-weight: bold;
+  color: #ccc; /* same gray as the progress bar */
+}
+
+.donate-section button {
+  background: #f2c200;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Progress bar styles */
+.progress-container {
+  margin: 20px 0;
+  max-width: 500px;
+}
+
+.progress-bar {
+  background: #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 20px;
+}
+
+/* Make the progress bar solid yellow */
+.progress {
+  background: #f2c200; /* solid yellow */
+  width: 37%;
+  height: 100%;
+}
+
+.goal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Right side of main content */
+.main-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Make the Hero Image smaller */
+.main-right img {
+  max-width: 250px; /* limits the width */
+  height: auto;     /* keeps the image ratio */
+  border-radius: 8px;
+}
+
+/* Testimony box styles */
+.testimony {
+  background: #ffffff;
+  color: #000;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 200px;
+}
+
+/* Side content section */
+.side-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 50px;
+  flex-wrap: wrap;
+}
+
+/* Donation history box */
+.donation-history {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 250px;
+}
+
+/* Fix spacing between "Donation History" and "See All" */
+.donation-history h3 {
+  margin-top: 0;
+  display: flex;              /* Use flex to space out the text */
+  justify-content: space-between; /* Put space between the two texts */
+  align-items: center;        /* Align them vertically */
+  font-size: 20px;            /* Optional: make the heading a bit larger */
+}
+
+.donation-history h3 span {
+  float: none;                /* Remove float */
+  font-size: 14px;
+  margin-left: 10px;          /* Add a little space from the title */
+}
+
+/* Project sites box */
+.project-sites {
+  background: #003366;
+  color: #f2c200;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  max-width: 200px;
+  align-self: flex-start;
+}
